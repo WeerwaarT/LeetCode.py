@@ -15,7 +15,5 @@ class Solution:
         right.sort()
 
 
-
 if __name__ == '__main__':
     print(Solution().maximumScore([1, 4, 3, 7, 4, 5], 3))
-    
