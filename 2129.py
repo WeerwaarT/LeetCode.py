@@ -14,3 +14,4 @@ class Solution:
 if __name__ == '__main__':
     print(Solution().capitalizeTitle("capiTalIze tHe titLe"))
     print(Solution().capitalizeTitle("heLlo wORLD!"))
+    print(Solution().capitalizeTitle("heLlo FROM windows!"))
