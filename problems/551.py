@@ -10,7 +10,8 @@ class Solution:
                     return False
 
                 absent = True
-            elif s[i] == "L":
+
+            if s[i] == "L":
                 if late == 2:
                     return False
 
