@@ -21,11 +21,12 @@ class Solution:
                 max_points += vals[0]
                 return
 
-            p0, p1 = vals[0], 0
+            pre, pre_pre = vals[0], 0
             for j in range(1, m):
-                p0, p1 = max(p0, p1 + vals[j]), p0
+                cur = max(pre, pre_pre + vals[j])
+                pre, pre_pre = cur, pre
 
-            max_points += p0
+            max_points += pre
 
         n = len(keys)
         for i in range(1, n):
