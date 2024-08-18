@@ -6,12 +6,12 @@ from typing import List
 class Solution:
     def minCostClimbingStairs(self, cost: List[int]) -> int:
         n = len(cost)
-        c0, c1 = cost[0], cost[1]
+        pre_pre, pre = cost[0], cost[1]
 
         for i in range(2, n):
-            c0, c1 = c1, min(c0, c1) + cost[i]
+            pre_pre, pre = pre, min(pre_pre, pre) + cost[i]
 
-        return min(c0, c1)
+        return min(pre_pre, pre)
 
     # def minCostClimbingStairs(self, cost: List[int]) -> int:
     #     n = len(cost)
