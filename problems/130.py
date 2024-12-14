@@ -54,6 +54,10 @@ class Solution:
         sizes = [1] * (m * n + 1)
         dummy = m * n
         def find(node: int) -> int:
+            # path compression
+            # if parents[node] != node:
+            #     parents[node] = find(parents[node])
+            # return parents[node]
             while parents[node] != node:
                 node = parents[node]
 
